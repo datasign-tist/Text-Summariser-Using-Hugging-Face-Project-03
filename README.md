@@ -45,35 +45,25 @@ python app.py
 
 Now,
 ```bash
-open up you local host and port
+open up your local host and port
 ```
-
-
-```bash
-Author: Krish Naik
-Data Scientist
-Email: krishnaik06@gmail.com
-
-```
-
-
 
 # AWS-CICD-Deployment-with-Github-Actions
 
-## 1. Login to AWS console.
+## 1. Login to the AWS console.
 
-## 2. Create IAM user for deployment
+## 2. Create an IAM user for deployment
 
 	#with specific access
 
-	1. EC2 access : It is virtual machine
+	1. EC2 access: It is the virtual machine
 
-	2. ECR: Elastic Container registry to save your docker image in aws
+	2. ECR: Elastic Container registry to save your docker image in AWS
 
 
 	#Description: About the deployment
 
-	1. Build docker image of the source code
+	1. Build a docker image of the source code
 
 	2. Push your docker image to ECR
 
@@ -90,7 +80,7 @@ Email: krishnaik06@gmail.com
 	2. AmazonEC2FullAccess
 
 	
-## 3. Create ECR repo to store/save docker image
+## 3. Create an ECR repo to store/save the docker image
     - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/text-s
 
 	
@@ -115,11 +105,11 @@ Email: krishnaik06@gmail.com
 
 	newgrp docker
 	
-# 6. Configure EC2 as self-hosted runner:
+# 6. Configure EC2 as a self-hosted runner:
     setting>actions>runner>new self hosted runner> choose os> then run command one by one
 
 
-# 7. Setup github secrets:
+# 7. Setup GitHub secrets:
 
     AWS_ACCESS_KEY_ID=
 
